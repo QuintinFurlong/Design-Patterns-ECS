@@ -1,0 +1,12 @@
+﻿  Main.cpp
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Position Component.h(10,22): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Position Component.h(11,22): warning C4244:  'return': conversion from 'float' to 'int', possible loss of data
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Health System.h(12,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Health System.h(14,24): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Ai System.h(11,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Ai System.h(13,24): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Control System.h(11,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Control System.h(13,24): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Render System.h(11,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Designs Patterns ECS\Render System.h(13,24): warning C4018:  '<': signed/unsigned mismatch
+  Designs Patterns ECS.vcxproj -> C:\Users\Quintin Furlong\Documents\GitHub\Design-Patterns-ECS\Designs Patterns ECS\Debug\Designs Patterns ECS.exe
