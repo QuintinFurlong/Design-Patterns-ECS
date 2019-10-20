@@ -11,18 +11,26 @@
 
 int main(int argc, char* args[])
 {
-	Entity player, alien, dog, cat;
-	HealthComponent hc;
-	PositionComponent pc;
+	Entity player("player");
+	Entity alien("alien");
+	Entity dog("dog");
+	Entity cat("cat");
+	PositionComponent pc[4];
+	HealthComponent hc[3];
 	InputComponent ic;
-	player.addComponent(&hc);
-	alien.addComponent(&hc);
-	dog.addComponent(&hc);
 
-	player.addComponent(&pc);
-	alien.addComponent(&pc);
-	dog.addComponent(&pc);
-	cat.addComponent(&pc);
+	pc[0].setPosition(10, 10);
+	pc[1].setPosition(350, 10);
+	pc[2].setPosition(10, 350);
+	pc[3].setPosition(350, 350);
+	player.addComponent(&pc[0]);
+	alien.addComponent(&pc[1]);
+	dog.addComponent(&pc[2]);
+	cat.addComponent(&pc[3]);
+
+	player.addComponent(&hc[0]);
+	alien.addComponent(&hc[1]);
+	dog.addComponent(&hc[2]);
 
 	player.addComponent(&ic);
 
@@ -46,11 +54,20 @@ int main(int argc, char* args[])
 	rs.addEntity(dog);
 	rs.addEntity(cat);
 
+	SDL_Init(SDL_INIT_VIDEO);
+
+	SDL_Window* sdl_window = SDL_CreateWindow("SDL2 Displaying Image",
+		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 700, 700, 0);
+	SDL_Renderer* renderer = SDL_CreateRenderer(sdl_window, -1, 0);
+
+
 	while (true) {
+		SDL_UpdateWindowSurface(sdl_window);
 		hs.update();
 		cs.update();
 		as.update();
-		rs.update();
+		rs.update(renderer);
+		SDL_RenderPresent(renderer);
 	}
 	return EXIT_SUCCESS;
 }

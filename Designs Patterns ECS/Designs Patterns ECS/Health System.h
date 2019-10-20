@@ -15,7 +15,7 @@ public:
 			{
 				if (entities.at(i).getComponents().at(i2)->getType() == "Health")
 				{
-					entities.at(i).getComponents().at(i2)->update();
+					//entities.at(i).getComponents().at(i2)->update();
 				}
 			}
 		}
